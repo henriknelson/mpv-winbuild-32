@@ -77,7 +77,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: shinchiro/mpv-winbuild-cmake
-          path: mpv-winbuild-cmake
+          path: mpv-winbuild-32-cmake
           fetch-depth: 0
 
       - name: Build LLVM
@@ -101,7 +101,7 @@ jobs:
         if: ${{ inputs.pgo }}
         run: |
           shopt -s globstar
-          cd mpv-winbuild-cmake/profiles/
+          cd mpv-winbuild-32-cmake/profiles/
           ls -R
           llvm-profdata merge *.profraw -o ../llvm.profdata
           rm -rf ./{*,.*} || true
