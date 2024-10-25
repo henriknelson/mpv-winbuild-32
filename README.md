@@ -1,8 +1,8 @@
-# mpv-winbuild
+# mpv-winbuild-32
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/zhongfly/mpv-winbuild/mpv.yml?branch=main)](https://github.com/zhongfly/mpv-winbuild/actions)
-[![releases](https://img.shields.io/github/v/release/zhongfly/mpv-winbuild)](https://github.com/zhongfly/mpv-winbuild/releases/latest)
-[![downloads](https://img.shields.io/github/downloads/zhongfly/mpv-winbuild/total)](https://github.com/zhongfly/mpv-winbuild/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/henriknelson/mpv-winbuild-32/mpv.yml?branch=main)](https://github.com/henriknelson/mpv-winbuild-32/actions)
+[![releases](https://img.shields.io/github/v/release/henriknelson/mpv-winbuild-32)](https://github.com/henriknelson/mpv-winbuild-32/releases/latest)
+[![downloads](https://img.shields.io/github/downloads/henriknelson/mpv-winbuild-32/total)](https://github.com/henriknelson/mpv-winbuild-32/releases)
 
 Use Github Action to build mpv for Windows with latest commit.
 
@@ -12,7 +12,7 @@ Based on <https://github.com/shinchiro/mpv-winbuild-cmake>.
 
 Checks the mpv repository every hour for updates. If there is an update and it is relevant to the windows build, it will automatically run the compilation and **release it on success**.
 
-This repo only provides 64-bit version. If you need a 32-bit version, you can fork this repo and run `MPV` workflow by yourself.
+This repo only provides 32-bit version
 
 > [!NOTE]
 > `mpv-dev-xxxx.7z` is libmpv, including the `libmpv-2.dll` file.
