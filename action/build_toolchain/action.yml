@@ -24,7 +24,7 @@ runs:
       shell: bash
       run: |
         set -x
-        cd mpv-winbuild-cmake
+        cd mpv-winbuild-32-cmake
         if [[ "$(ls -A ../patch/*.patch)" ]]; then
           for patch in ../patch/*.patch ; do
             git am --3way "$patch" || git am --abort
@@ -34,7 +34,7 @@ runs:
     - name: Build
       shell: bash
       run: |
-        cd mpv-winbuild-cmake
+        cd mpv-winbuild-32-cmake
         bit="${{ inputs.bit }}"
         compiler="${{ inputs.compiler }}"
         gitdir=$(pwd)
